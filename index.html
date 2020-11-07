@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Required Packages -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <!-- Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+    <!-- Custom JS and CSS -->
+    <script src="script.js"></script> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light shadow">
+        <div class="d-flex w-100 order-0">
+            <div class="w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <a class="navbar-brand text-center w-100" href="index.html">
+                <img class="logo" src="Photos/logo.png">
+            </a>
+            <span class="w-100"></span>
+        </div>
+        <span class="w-100"></span>
+
+        <div class="collapse navbar-collapse w-100 order-sm-1 order-lg-1" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="staff.html">Staff</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="card bg-white text-black fadeIn">
+        <img src="Photos/overlay.jpg" class="card-img" alt="Photo by Iva Muškić from Pexels">
+        <div class="card-img-overlay text-center d-flex flex-column justify-content-center text-bg">
+            <h1 class="card-title">A Business You Can Trust</h1>
+            <button type="button" class="btn btn-light d-flex flex-column justify-content-center mx-auto"
+                data-toggle="modal" data-target="#estimate" style="margin-left: 37.5%;">Get Your Estimate</button>
+        </div>
+    </div>
+    <div class="container pad">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 pad">
+                <button type="button" class="btn pad shadow" data-toggle="modal" data-target="#kitchen">
+                    <div class="card" style="width: 100%;">
+                        <img src="Photos/Kitchen.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h3>Kitchen Tiles</h3>
+                            <p class="card-text">Modern kitchen design with gray tiles and white cabinets</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 pad">
+                <button type="button" class="btn pad shadow" data-toggle="modal" data-target="#stone">
+                    <div class="card" style="width: 100%;">
+                        <img src="Photos/Stone.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h3>Stone Tiles</h3>
+                            <p class="card-text">Features high-quality natural stone that offers a unique texture</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 pad">
+                <button type="button" class="btn pad shadow" data-toggle="modal" data-target="#Laminate">
+                    <div class="card" style="width: 100%;">
+                        <img src="Photos/Laminate.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h3>Laminate Floor</h3>
+                            <p class="card-text">Beautiful design that will last many years and its easy to install </p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 pad">
+                <button type="button" class="btn pad shadow" data-toggle="modal" data-target="#Wood">
+                    <div class="card" style="width: 100%;">
+                        <img src="Photos/Wood.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h3>Hardwood Floor</h3>
+                            <p class="card-text">Wood is a common choice and can comes in various styles</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 pad">
+                <button type="button" class="btn pad shadow" data-toggle="modal" data-target="#bathroom">
+                    <div class="card" style="width: 100%;">
+                        <img src="Photos/bathrrom.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h3>Bathroom Tile</h3>
+                            <p class="card-text">Protect your walls and floors while creating a beautiful look</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 pad">
+                <button type="button" class="btn pad shadow" data-toggle="modal" data-target="#subway">
+                    <div class="card" style="width: 100%;">
+                        <img src="Photos/Subway.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h3>Subway Tiles</h3>
+                            <p class="card-text">The authentic subway tile is timeless and beautiful</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="row pad">
+            <div class="text-center col-lg-4 col-sm-12 col-md-6">
+                <h3>Hours</h3>
+                <ul style="list-style-type: none;">
+                    <li>Monday 7am - 9pm</li>
+                    <li>Tuesday 7am - 9pm</li>
+                    <li>Wednesday 7am - 9pm</li>
+                    <li>Thrusday 7am - 9pm</li>
+                    <li>Friday 7am - 9pm</li>
+                    <li>Saturday Closed</li>
+                    <li>Sunday Closed</li>
+                </ul>
+
+            </div>
+            <div class="text-center col-lg-4 col-sm-12 col-md-6">
+                <h3>Location</h3>
+                <div><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3116.537303749406!2d-90.23277818424019!3d38.63652416988313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b4a38dd26b3b%3A0xb8419317e7b4cdbd!2sMidtown%2C%20St.%20Louis%2C%20MO%2063103!5e0!3m2!1sen!2sus!4v1604187029371!5m2!1sen!2sus"
+                        width="400" height="230" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe></div>
+            </div>
+            <div class="text-center col-lg-4 col-sm-12 col-md-6">
+                <h3>Get In Touch</h3>
+                <a href="#" class="fa fa-facebook fa-3x"></a>
+                <a href="#" class="fa fa-twitter fa-3x"></a>
+                <a href="#" class="fa fa-instagram fa-3x"></a>
+                <a href="#" class="fa fa-envelope-o fa-3x"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="modal fade" id="subway" tabindex="-1" aria-labelledby="subwaylabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="subwaylabel">Subway Tiles</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="Photos/Subway.jpg" width="100%">
+                    <div>
+                        <h3>Materials</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Grout<br>
+                                - Tile<br>
+                                - Tile Adhesive <br>
+                            </div>
+                            <div class="col">
+                                - Silicone Caulk<br>
+                                - Silicone Grout Sealer<br>
+                                - Cleaning Cloths <br>
+                            </div>
+                        </div>
+                        <h3>Tools</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Level<br>
+                                - Goggles<br>
+                                - Carpenter's Square<br>
+                                - Sponge<br>
+                                - Rubber Grout Float<br>
+                                - Tape Measure<br>
+                            </div>
+                            <div class="col">
+                                - Hammer<br>
+                                - Notched Trowel or Spreader<br>
+                                - Buckets<br>
+                                - Tile Cutter or Tile Saw<br>
+                                - Rubber Gloves<br>
+                                - Knee Pads<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="kitchen" tabindex="-1" aria-labelledby="kitchenLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="kitchenLabel">Kitchen Tiles</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="Photos/Kitchen.jpg" width="100%">
+                    <div>
+                        <h3>Materials</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Grout<br>
+                                - Tile<br>
+                                - Tile Adhesive <br>
+                            </div>
+                            <div class="col">
+                                - Silicone Caulk<br>
+                                - Silicone Grout Sealer<br>
+                                - Cleaning Cloths <br>
+                            </div>
+                        </div>
+                        <h3>Tools</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Level<br>
+                                - Goggles<br>
+                                - Carpenter's Square<br>
+                                - Sponge<br>
+                                - Rubber Grout Float<br>
+                                - Tape Measure<br>
+                            </div>
+                            <div class="col">
+                                - Hammer<br>
+                                - Notched Trowel or Spreader<br>
+                                - Buckets<br>
+                                - Tile Cutter or Tile Saw<br>
+                                - Rubber Gloves<br>
+                                - Knee Pads<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="stone" tabindex="-1" aria-labelledby="stonelabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="stonelabel">Kitchen Tiles</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="Photos/Stone.jpg" width="100%">
+                    <div>
+                        <h3>Materials</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Penetrating sealer <br>
+                                - White modified thinset<br>
+                            </div>
+                            <div class="col">
+                                - Grout<br>
+                                - Limestone tile<br>
+                            </div>
+                        </div>
+                        <h3>Tools</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Grouting sponge <br>
+                                - Chisel bit <br>
+                                - Hammer gun <br>
+                                - Floor scraper <br>
+                                - Wet saw <br>
+                                - Dust mask <br>
+                                - Grout float <br>
+                            </div>
+                            <div class="col">
+                                - Safety glasses<br>
+                                - Plastic bags <br>
+                                - Buckets <br>
+                                - Straightedge <br>
+                                - Margin trowel <br>
+                                - Shop vacuum <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bathroom" tabindex="-1" aria-labelledby="bathroomLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bathroomLabel">Bathroom Tiles</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="Photos/bathrrom.jpg" width="100%">
+                    <div>
+                        <h3>Materials</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Grout<br>
+                                - Tile<br>
+                                - Tile Adhesive <br>
+                            </div>
+                            <div class="col">
+                                - Silicone Caulk<br>
+                                - Silicone Grout Sealer<br>
+                                - Cleaning Cloths <br>
+                            </div>
+                        </div>
+                        <h3>Tools</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Level<br>
+                                - Goggles<br>
+                                - Carpenter's Square<br>
+                                - Sponge<br>
+                                - Rubber Grout Float<br>
+                                - Tape Measure<br>
+                            </div>
+                            <div class="col">
+                                - Hammer<br>
+                                - Notched Trowel or Spreader<br>
+                                - Buckets<br>
+                                - Tile Cutter or Tile Saw<br>
+                                - Rubber Gloves<br>
+                                - Knee Pads<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Laminate" tabindex="-1" aria-labelledby="laminateLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="laminateLabel">Laminate Floor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="Photos/Laminate.jpg" width="100%">
+                    <div>
+                        <h3>Materials</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Laminate Flooring<br>
+                                - Silicone sealant <br>
+                            </div>
+                        </div>
+                        <h3>Tools</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Rubber mallet <br>
+                                - Tape measure <br>
+                                - Table saw<br>
+                                - Chop saw <br>
+                                - Compass<br>
+                            </div>
+                            <div class="col">
+                                - Pull bar <br>
+                                - Tapping bar <br>
+                                - Jigsaw <br>
+                                - Spacers <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Wood" tabindex="-1" aria-labelledby="woodLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="woodLabel">Hardwood Floor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="Photos/Wood.jpg" width="100%">
+                    <div>
+                        <h3>Materials</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Pneumatic flooring package <br>
+                                - Modular porch system kit <br>
+                                - Hardwood <br>
+                                - Vapor barrier paper <br>
+                                - Wood putty <br>
+                            </div>
+                        </div>
+                        <h3>Tools</h3>
+                        <div class="row">
+                            <div class="col">
+                                - Pry bar <br>
+                                - Tape measure <br>
+                                - Ear protection<br>
+                                - Drill bit <br>
+                                - Staple gun<br>
+                                - Drill<br>
+                            </div>
+                            <div class="col">
+                                - Hammar <br>
+                                - Table saw <br>
+                                - Chop saw <br>
+                                - Chalk line <br>
+                                - Safety goggles<br>
+                                - Nail Set
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="estimate" tabindex="-1" aria-labelledby="estimateLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="estimateLabel">Estimate Your Cost</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="error hidden" id="error">
+                    </div>
+                        <p>This is just an estimation and <u><b> not the final pricing</b></u></p>
+                    <div class="form-group">
+                        <label for="tiles">Flooring Type</label>
+                        <select class="form-control" id="tiles">
+                            <option disabled selected>Select a flooring type</option>
+                            <option>Laminate</option>
+                            <option>Wood</option>
+                            <option>Stone Tiles</option>
+                            <option>Normal Tiles</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="height">Height</label><br>
+                            <input type="number" name="height" id="height">ft
+                        </div>
+                        <div class="col-6">
+                            <label for="width">Width</label>
+                            <input type="number" name="width" id="width">ft
+                        </div><br>
+                        <div class="row hidden pad" id="info-mat">
+                            <div class="col-2">Materials: </div>
+                            <div class="col-10" id="mat"></div><br>
+                            <div class="col-2">Labor: </div>
+                            <div class="col-10" id="labor" ></div><br>
+                            <div class="col-12">----------------------------</div>
+                            <div class="col-2 cost">Cost: </div>
+                            <div class="col-10 cost" style="font-size: 23px;;" id="answer" ></div><br>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" id="calc">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

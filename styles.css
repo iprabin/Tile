@@ -1,0 +1,163 @@
+.logo {
+    width: 80px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+.abt-shadow {
+    box-shadow: -8px 0 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.text-bg {
+    background-color: rgba(0, 0, 0, 0.4);
+    color           : white;
+}
+
+.abt-bg {
+    background-color: rgba(0, 0, 0, 1);
+    color           : white;
+    height          : 100px;
+    margin-top      : 70%;
+}
+
+.pad {
+    padding: 10px;
+}
+
+.marg {
+    margin-top: 20px;
+}
+
+.card {
+    border: none;
+}
+
+.card-staff {
+    height       : 100%;
+    border-radius: 50%;
+    margin-left  : 15%;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color           : white;
+    padding-bottom  : 20px;
+}
+
+.fadeIn {
+    animation-name    : fadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fa {
+    color       : white;
+    margin-right: 8px;
+}
+
+.fa:hover {
+    color: salmon;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin            : 0;
+}
+
+input[type=number] {
+    -moz-appearance : textfield;
+    border          : none;
+    background-color: lightgray;
+    width           : 80%;
+    padding         : 10px;
+    border-radius   : 5px;
+}
+
+.error {
+    padding: 10px;
+    color  : red;
+}
+
+.phone {
+    width: 20%;
+    ;
+}
+
+.email {
+    width: 30%;
+}
+
+.mess {
+    width: 60%;
+}
+
+.contact-cont {
+    width        : 60%;
+    margin-left  : 20%;
+    margin-top   : 15px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inherit;
+}
+
+.cost {
+    font-family: 'Montserrat', sans-serif;
+    color      : green;
+}
+
+@media (max-width: 600px) {
+    .abt-img {
+        height: 300px;
+    }
+
+    .abt-bg {
+        margin-top: 27%;
+        height    : 70px;
+    }
+
+    .card-staff {
+        margin: 0;
+        height: 380px;
+
+    }
+
+    .mess {
+        width: 100%;
+    }
+
+    .phone {
+        width: 100%;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .contact-cont {
+        width       : 90%;
+        margin-left : 5%;
+        margin-right: 5%;
+    }
+}
