@@ -65,12 +65,12 @@ body {
     }
 }
 
-.fa {
+.footer .fa {
     color       : white;
     margin-right: 8px;
 }
 
-.fa:hover {
+.footer .fa:hover {
     color: salmon;
 }
 

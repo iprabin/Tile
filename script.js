@@ -107,6 +107,13 @@ $(function () {
         document.getElementById("error").innerHTML = "";
     });
 
+    $("form").submit(function(e){
+        e.preventDefault();
+    });
+
+    $('#sub').on('click', function (e) {
+        $('form').trigger("reset");
+    });
 });
 
 function clickedService(id) {
